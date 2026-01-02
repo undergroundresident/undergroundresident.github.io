@@ -1,12 +1,17 @@
 <br>
 <center>
   <div style="display: inline-block; vertical-align: middle;">
-    <a href="{{ '/' | relative_url }}" class="title"><b>{{ site.title | upcase }}</b><br></a>
+    <!-- Logo and Title Container -->
+    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px;">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" style="height: 50px; width: auto; margin-top: 5px;">
+      <a href="{{ '/' | relative_url }}" class="title"><b>{{ site.title | upcase }}</b></a>
+    </div>
     <hr>
-    <div style="text-align: justify; display: inline-block; width: 100%;">
-      <a class="title" href="mailto:{{ site.email | default: 'leventkayadev@gmail.com' }}">CONTACT</a>&nbsp;&nbsp;&nbsp;
+    <!-- Centered Links -->
+    <div style="text-align: center; display: inline-block; width: 100%;">
+      <a class="title" href="{{ '/contact/' | relative_url }}">CONTACT</a>&nbsp;&nbsp;&nbsp;
       <a class="title" href="{{ '/archive/' | relative_url }}">ARCHIVE</a>&nbsp;&nbsp;&nbsp;
-      <a class="title" href="{{ site.feed.path | default: '/rss.xml' | relative_url }}">RSS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="title" href="{{ site.feed.path | default: '/rss.xml' | relative_url }}">RSS</a>
     </div>
   </div>
 </center>
