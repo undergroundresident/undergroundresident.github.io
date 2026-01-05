@@ -8,7 +8,6 @@ permalink: /contact/
 
 Feel free to reach out to me through any of the following methods:
 
-**Email:** undergroundresident [at] posteo [dot] net
 
 **Telegram:** [@UndergroundResident](https://t.me/UndergroundResident)
 
